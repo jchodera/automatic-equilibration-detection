@@ -1,5 +1,5 @@
 % PRL look and style (easy on the eyes)
-%\RequirePackage[hyphens]{url}
+\RequirePackage[hyphens]{url}
 %\documentclass[linenumbers,11point]{achemso}
 \documentclass[aps,pre,twocolumn,nofootinbib,superscriptaddress,linenumbers,11point]{revtex4-1}
 % Two-column style (for submission/review/editing)
@@ -13,6 +13,10 @@
 \usepackage[T1]{fontenc}
 %\usepackage[font=sf,justification=justified]{caption}
 %\usepackage[font=sf]{floatrow}
+
+\PassOptionsToPackage{hyphens}{url}
+%\usepackage[hyphens]{url}
+\usepackage[colorlinks=true,citecolor=blue,linkcolor=blue]{hyperref}
 
 % Rework captions to use sans serif font.
 \makeatletter
@@ -35,7 +39,7 @@
 \usepackage{dcolumn}
 \usepackage{boxedminipage}
 \usepackage{verbatim}
-\usepackage[colorlinks=true,citecolor=blue,linkcolor=blue]{hyperref}
+
 %\usepackage[colorlinks=false,citecolor=blue,linkcolor=blue]{hyperref}
 
 \usepackage{subfigure}  % use for side-by-side figures
@@ -80,6 +84,7 @@
 \DeclareMathOperator*{\argmax}{argmax}
 \newcommand*{\argminl}{\argmin\limits}
 \newcommand*{\argmaxl}{\argmax\limits}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Meta-data block
